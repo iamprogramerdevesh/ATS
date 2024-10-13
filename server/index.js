@@ -7,6 +7,7 @@ import corsOptions from "./src/config/corsOptions.js";
 import credentials from "./src/config/corsCredentials.js";
 import cookieParser from "cookie-parser";
 import bodyParser from "body-parser";
+import authRoutes from "./src/routes/authRoutes.js";
 
 //#region CONFIGURATIONS
 dotenv.config();
@@ -24,6 +25,10 @@ app.use(cookieParser());
 app.get('/', (req, res) => {
   res.send('Hello World!');
 })
+//#endregion
+
+//#region Routes
+app.use("/api/auth", authRoutes);
 //#endregion
 
 //#region MONGOOSE SETUP
