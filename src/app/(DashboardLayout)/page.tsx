@@ -4,7 +4,6 @@ import TotalFollowers from "../components/dashboard/TotalFollowers";
 import TotalIncome from "../components/dashboard/TotalIncome";
 import PopularProducts from "../components/dashboard/PopularProducts";
 import EarningReports from "../components/dashboard/EarningReports";
-import BlogCards from "../components/dashboard/BlogCards";
 import Link from "next/link";
 
 const page = () => {
@@ -29,9 +28,6 @@ const page = () => {
         </div>
         <div className="lg:col-span-4 col-span-12">
           <EarningReports />
-        </div>
-        <div className="col-span-12">
-          <BlogCards />
         </div>
         <div className="col-span-12 text-center">
           <p className="text-base">

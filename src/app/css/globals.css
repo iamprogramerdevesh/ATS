@@ -22,11 +22,11 @@
   }
 
   .card-title {
-    @apply text-lg font-semibold text-dark
+    @apply text-lg font-semibold text-dark dark:text-white;
   }
 
   .card-subtitle {
-    @apply text-sm font-medium text-darklink
+    @apply text-sm font-medium text-darklink;
   }
 
   body {
@@ -40,7 +40,7 @@
   h4,
   h5,
   h6 {
-    @apply text-dark font-semibold;
+    @apply text-dark font-semibold dark:text-white;
   }
 
   .border-ld {

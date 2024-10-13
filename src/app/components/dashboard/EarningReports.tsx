@@ -104,7 +104,7 @@ const EarningReports = () => {
             </div>
           ))}
 
-          <Link href={'/'} className="text-base text-dark text-center pt-6 font-semibold text-dark hover:text-primary dark:hover:text-primary">
+          <Link href={'/'} className="text-base text-center pt-6 font-semibold text-dark hover:text-primary dark:hover:text-primary dark:text-lightgray">
           View more markets</Link>
         </div>
       </div>

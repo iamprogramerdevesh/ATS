@@ -1,6 +1,6 @@
 "use client";
 import React, { useState, useEffect } from "react";
-import { Badge, Button, Navbar } from "flowbite-react";
+import { Badge, Button, Navbar, DarkThemeToggle } from "flowbite-react";
 import { Icon } from "@iconify/react";
 import Profile from "./Profile";
 import FullLogo from "../../shared/logo/FullLogo";
@@ -33,11 +33,10 @@ const Header = () => {
   return (
     <>
       <header
-        className={`sticky top-0 z-[5] ${
-          isSticky
-            ? "bg-lightgray dark:bg-dark shadow-md fixed w-full"
-            : "bg-transparent"
-        }`}
+        className={`sticky top-0 z-[5] ${isSticky
+          ? "bg-lightgray dark:bg-dark shadow-md fixed w-full"
+          : "bg-transparent"
+          }`}
       >
         <Navbar
           fluid
@@ -60,9 +59,11 @@ const Header = () => {
             </div>
 
             <div className="flex gap-4 items-center">
-              <Button as={Link} href="https://www.wrappixel.com/templates/materialm-next-js-tailwind-dashboard-template/?ref=33" target="_blank" size={'sm'} color={"primary"}>
-                Upgrade To Pro 
-              </Button>
+              {/* <span className="h-10 w-10 hover:text-primary hover:bg-lightprimary rounded-full flex justify-center items-center cursor-pointer relative">
+                <Icon icon="material-symbols:dark-mode" width="28" height="28" />
+                <Icon icon="ic:round-light-mode" width="28" height="28" />
+              </span> */}
+              <DarkThemeToggle />
               <Profile />
             </div>
           </div>

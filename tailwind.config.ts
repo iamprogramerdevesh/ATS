@@ -61,6 +61,7 @@ const config: Config = {
         border: "var(--color-border)",
         bordergray: "var(--color-bordergray)",
         lightgray: "var( --color-lightgray)",
+        darkgray: "var( --color-darkgray)",
         muted: "var(--color-muted)",
         dark: "var(--color-dark)",
         link: "var(--color-link)",
